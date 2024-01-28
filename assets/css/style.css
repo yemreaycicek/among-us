@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ffde2a;
+}
+
+.player {
+  width: 140px;
+  height: 200px;
+  background-color: #840931;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  border: 10px solid #000;
+  border-radius: 60px 80px 0 0;
+  border-bottom: none;
+  z-index: 1;
+}
+
+.player::after {
+  content: '';
+  position: absolute;
+  top: 2.5px;
+  left: 6px;
+  width : 92%;
+  height: 85%;
+  background-color: #ea1616;
+  border-radius: 58% 70% 28% 42% / 28% 56% 88% 89%;
+}
+
+.legs {
+  width: 60px;
+  height: 50px;
+  background-color: #840931;
+  position: absolute;
+  bottom: -50px;
+  left: -10px;
+  border: 10px solid #000;
+  border-radius: 0 0 22px 22px;
+  border-top: none;
+  z-index: 1;
+}
+
+.legs::before {
+  content: '';
+  width: 60px;
+  height: 45px;
+  background-color: #840931;
+  position: absolute;
+  right: -90px;
+  border: 10px solid #000;
+  border-top: none;
+  border-radius: 0 0 22px 22px;
+
+}
+
+.legs::after {
+  content: '';
+  width: 55px;
+  height: 10px;
+  background-color: #000;
+  position: absolute;
+  top: -10px;
+  left: 40px;
+  border-radius: 0 0 10px 0;
+}
+
+.backpack {
+  width: 35px;
+  height: 120px;
+  background-color: #ea1616;
+  border: 10px solid #000;
+  position: absolute;
+  top: 65px;
+  left: -44px;
+  border-radius: 20px 0 0 20px;
+  border-right: none;
+}
+
+.backpack::before {
+  content: '';
+  position: absolute;
+  bottom: -0.5px;
+  width: 25px;
+  height: 78px;
+  background-color: #840931;
+  border-radius: 12px 0 0 8px;
+}
+
+.eyes {
+  width: 110px;
+  height: 75px;
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  background-color: #225381;
+  border: 10px solid #000;
+  border-radius: 25px 50px 30px 30px;
+  z-index: 2;
+}
+
+.eyes::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 85%;
+  height: 65%;
+  background-color: #71d4ec;
+  border-radius: 0 28px 3px 30px;
+}
+
+.eyes::after {
+  content: '';
+  width: 45%;
+  height: 22%;
+  background-color: #f7f7f7;
+  position: absolute;
+  top: 5px;
+  left: 37px;
+  border-radius: 10px;
+  transform: rotate(6deg);
+}
+
+.shadow {
+  width: 210px;
+  height: 40px;
+  background-color: rgba(153, 130, 0, 0.2);
+  position: absolute;
+  bottom: -62px;
+  right: -40px;
+  border-radius: 50%;
+  z-index: 0;
+}
